@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap");
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  cursor: none;
+}
+
+#sonar{
+  position: absolute;
+  z-index: 2;
+  top:50%;
+  left:50%;
+  width: 0px;
+  height: 0px;
+  border: 0px solid #009933; 
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0;
+  animation: pulse linear 1.5s infinite;
+}
+
+@keyframes pulse {
+  from{
+    width: 0px;
+    height: 0px;
+    border: 0px solid #009933; 
+  }
+  to{
+    width: 65px;
+    height: 65px;
+    border: 4px solid #009933; 
+  }
+}
